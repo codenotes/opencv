@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\ocl\test_brute_force_matcher.cpp">
+      <Filter>Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_agast.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_brisk.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_descriptors_regression.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_detectors_regression.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_fast.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_keypoints.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_matchers_algorithmic.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_mser.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_nearestneighbors.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_orb.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\features2d\test\test_rotation_and_scale_invariance.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_test_features2d_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\repos\opencv\sources\modules\features2d\test\test_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repos\opencv\sources\modules\features2d\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src\ocl">
+      <UniqueIdentifier>{F54DB8C4-62DF-46F4-93EF-2CAFFBCCED4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1F0BB369-C3FD-4FA6-A920-195A54B47A59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{FD0FE800-61B3-4573-A785-A29A12B7CAAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{973203C1-C626-4ED9-A95D-7E7B953B86FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

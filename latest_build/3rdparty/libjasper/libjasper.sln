@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{31D99836-6820-4124-BA86-74DC2A25BB9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1654A6C9-064C-464E-A645-C2FC7593094A} = {1654A6C9-064C-464E-A645-C2FC7593094A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{1CFBB79A-1B43-4EE1-A5DD-BBA7C223ADA5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31D99836-6820-4124-BA86-74DC2A25BB9F} = {31D99836-6820-4124-BA86-74DC2A25BB9F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PACKAGE", "PACKAGE.vcxproj", "{353E6DDF-5F9A-4B28-98D9-BB7287754B90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31D99836-6820-4124-BA86-74DC2A25BB9F} = {31D99836-6820-4124-BA86-74DC2A25BB9F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\..\\ZERO_CHECK.vcxproj", "{021AB204-82B5-47CF-A037-27F966E87D29}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjasper", "libjasper.vcxproj", "{1654A6C9-064C-464E-A645-C2FC7593094A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{021AB204-82B5-47CF-A037-27F966E87D29} = {021AB204-82B5-47CF-A037-27F966E87D29}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdparty", "3rdparty", "{4D879E14-A22A-4B6B-AF2F-2BF9D51CFED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakeTargets", "CMakeTargets", "{DFC892B1-81BE-4C44-9E2D-CAA434287203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D99836-6820-4124-BA86-74DC2A25BB9F}.Debug|x64.ActiveCfg = Debug|x64
+		{31D99836-6820-4124-BA86-74DC2A25BB9F}.Debug|x64.Build.0 = Debug|x64
+		{31D99836-6820-4124-BA86-74DC2A25BB9F}.Release|x64.ActiveCfg = Release|x64
+		{31D99836-6820-4124-BA86-74DC2A25BB9F}.Release|x64.Build.0 = Release|x64
+		{1CFBB79A-1B43-4EE1-A5DD-BBA7C223ADA5}.Debug|x64.ActiveCfg = Debug|x64
+		{1CFBB79A-1B43-4EE1-A5DD-BBA7C223ADA5}.Release|x64.ActiveCfg = Release|x64
+		{353E6DDF-5F9A-4B28-98D9-BB7287754B90}.Debug|x64.ActiveCfg = Debug|x64
+		{353E6DDF-5F9A-4B28-98D9-BB7287754B90}.Release|x64.ActiveCfg = Release|x64
+		{021AB204-82B5-47CF-A037-27F966E87D29}.Debug|x64.ActiveCfg = Debug|x64
+		{021AB204-82B5-47CF-A037-27F966E87D29}.Debug|x64.Build.0 = Debug|x64
+		{021AB204-82B5-47CF-A037-27F966E87D29}.Release|x64.ActiveCfg = Release|x64
+		{021AB204-82B5-47CF-A037-27F966E87D29}.Release|x64.Build.0 = Release|x64
+		{1654A6C9-064C-464E-A645-C2FC7593094A}.Debug|x64.ActiveCfg = Debug|x64
+		{1654A6C9-064C-464E-A645-C2FC7593094A}.Debug|x64.Build.0 = Debug|x64
+		{1654A6C9-064C-464E-A645-C2FC7593094A}.Release|x64.ActiveCfg = Release|x64
+		{1654A6C9-064C-464E-A645-C2FC7593094A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1654A6C9-064C-464E-A645-C2FC7593094A} = {4D879E14-A22A-4B6B-AF2F-2BF9D51CFED9}
+		{1CFBB79A-1B43-4EE1-A5DD-BBA7C223ADA5} = {DFC892B1-81BE-4C44-9E2D-CAA434287203}
+		{353E6DDF-5F9A-4B28-98D9-BB7287754B90} = {DFC892B1-81BE-4C44-9E2D-CAA434287203}
+		{021AB204-82B5-47CF-A037-27F966E87D29} = {DFC892B1-81BE-4C44-9E2D-CAA434287203}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{CE420000-52CD-429D-A41A-628DC375F506}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_test_photo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repos\opencv\latest_build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_test_photo.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_test_photod</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repos\opencv\latest_build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_test_photo.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_test_photo</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_ts300d.lib;..\..\lib\Debug\opencv_photo300d.lib;..\..\lib\Debug\opencv_hal300d.lib;..\..\lib\Debug\opencv_hal300d.lib;..\..\lib\Debug\opencv_highgui300d.lib;..\..\lib\Debug\opencv_hal300d.lib;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64\ippicvmt.lib;..\..\lib\Debug\opencv_videoio300d.lib;..\..\lib\Debug\opencv_imgcodecs300d.lib;..\..\lib\Debug\opencv_imgproc300d.lib;..\..\lib\Debug\opencv_core300d.lib;..\..\lib\Debug\opencv_hal300d.lib;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/repos/opencv/latest_build/bin/Debug/opencv_test_photod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/repos/opencv/latest_build/bin/Debug/opencv_test_photod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repos\opencv\sources\3rdparty\include\opencl\1.2;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;C:\repos\opencv\latest_build;c:\include\eigen3;C:\repos\opencv\sources\modules\ts\include;C:\repos\opencv\sources\modules\photo\include;C:\repos\opencv\sources\modules\imgcodecs\include;C:\repos\opencv\sources\modules\videoio\include;C:\repos\opencv\sources\modules\hal\include;C:\repos\opencv\sources\modules\core\include;C:\repos\opencv\sources\modules\imgproc\include;C:\repos\opencv\sources\modules\highgui\include;C:\repos\opencv\sources\modules\photo\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_ts300.lib;..\..\lib\Release\opencv_photo300.lib;..\..\lib\Release\opencv_hal300.lib;..\..\lib\Release\opencv_hal300.lib;..\..\lib\Release\opencv_highgui300.lib;..\..\lib\Release\opencv_hal300.lib;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64\ippicvmt.lib;..\..\lib\Release\opencv_videoio300.lib;..\..\lib\Release\opencv_imgcodecs300.lib;..\..\lib\Release\opencv_imgproc300.lib;..\..\lib\Release\opencv_core300.lib;..\..\lib\Release\opencv_hal300.lib;C:\repos\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64\ippicvmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/repos/opencv/latest_build/bin/Release/opencv_test_photo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/repos/opencv/latest_build/bin/Release/opencv_test_photo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repos\opencv\sources\modules\photo\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/repos/opencv/sources/modules/photo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/repos/opencv/sources -B../../ --check-stamp-file C:\repos\opencv\latest_build\modules\photo\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/repos/opencv/sources/modules/photo/CMakeLists.txt;C:\repos\opencv\sources\modules\photo\CMakeLists.txt;C:\repos\opencv\sources\modules\photo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repos\opencv\latest_build\modules\photo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repos/opencv/sources/modules/photo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/repos/opencv/sources -B../../ --check-stamp-file C:\repos\opencv\latest_build\modules\photo\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/repos/opencv/sources/modules/photo/CMakeLists.txt;C:\repos\opencv\sources\modules\photo\CMakeLists.txt;C:\repos\opencv\sources\modules\photo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repos\opencv\latest_build\modules\photo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\repos\opencv\sources\modules\photo\test\test_precomp.hpp" />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\ocl\test_denoising.cpp" >
+      <ObjectFileName>$(IntDir)/test/ocl/test_denoising.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_cloning.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_decolor.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_denoise_tvl1.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_denoising.cpp" >
+      <ObjectFileName>$(IntDir)/test/test_denoising.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_denoising.cuda.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_hdr.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_inpaint.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_main.cpp"  />
+    <ClCompile Include="C:\repos\opencv\sources\modules\photo\test\test_npr.cpp"  />
+    <ClCompile Include="opencv_test_photo_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/repos/opencv/sources/modules/photo/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/repos/opencv/latest_build/ZERO_CHECK.vcxproj">
+      <Project>021AB204-82B5-47CF-A037-27F966E87D29</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/core/opencv_core.vcxproj">
+      <Project>749353FE-8DD3-474B-94C9-C9E1789B45E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/hal/opencv_hal.vcxproj">
+      <Project>8326B485-0070-4447-8767-0F05DBBBCFC9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/highgui/opencv_highgui.vcxproj">
+      <Project>05DB17B6-0508-4C1F-9DBE-89484E014A99</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/imgcodecs/opencv_imgcodecs.vcxproj">
+      <Project>0F4FAD23-4B22-45CB-8BAA-0575162D0A67</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>B1D839DF-6872-4222-8FBE-EA8E354EA9C1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/photo/opencv_photo.vcxproj">
+      <Project>2E15B6E9-575A-4F71-9063-764A1677FB60</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/ts/opencv_ts.vcxproj">
+      <Project>ABF8426B-54E9-48D5-AF8C-86C0C204BFF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/repos/opencv/latest_build/modules/videoio/opencv_videoio.vcxproj">
+      <Project>52BE82AA-75B0-432C-90DF-9587AEB7A60B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
